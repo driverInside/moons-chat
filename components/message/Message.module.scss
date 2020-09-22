@@ -1,0 +1,36 @@
+.message {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    .messageContainer {
+        .messageTitle {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        .messageBody {
+            .messageText {
+                padding: 10px;
+                border-radius: 4px;
+                border: 1px solid #ddd;
+            }
+        }
+    }
+}
+
+.incomingMessage {
+    grid-column: 1 / span 8;
+    .messageBody {
+        background-color: rgba($color: #149, $alpha: 0.1);
+    }
+}
+.ownMessage {
+    grid-column: 4 / span 10;
+
+    .messageTitle {
+        text-align: right;
+    }
+
+    .messageBody {
+        background-color: rgba($color: #097, $alpha: 0.1);
+    }
+} 
